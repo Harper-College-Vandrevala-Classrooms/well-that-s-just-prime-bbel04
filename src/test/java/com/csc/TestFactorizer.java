@@ -37,16 +37,10 @@ public class TestFactorizer {
   }
 
   @Test
-  public void testPrimeFactorsOfTen() {
-    String expected = "2 5";
-    assertEquals(expected, factorizer.PrimeFactor(10));
+  public void testPrimeFactorsOfEight() {
+    String expected = "2 2 2";
+    assertEquals(expected, factorizer.PrimeFactor(8));
   }
-
-  @Test
-    public void testPrimeFactorsOfTwelve() {
-      String expected = "2 2 3";
-      assertEquals(expected, factorizer.PrimeFactor(12));
-    }
 
   @Test
     public void testPrimeFactorsOfThriteen() {
@@ -61,14 +55,14 @@ public class TestFactorizer {
     }
 
   @Test
-  public void testPrimeFactorsOfFourtyOne() {
-    String expected = "41";
-    assertEquals(expected, factorizer.PrimeFactor(41));
-  }
-
-  @Test
   public void testPrimeFactorsOfOneHundred() {
     String expected = "2 2 5 5";
     assertEquals(expected, factorizer.PrimeFactor(100));
+  }
+
+  @Test
+  public void testPrimeFactorsOfOneHundredOne() {
+    String expected = "101";
+    assertEquals(expected, factorizer.PrimeFactor(101));
   }
 }
