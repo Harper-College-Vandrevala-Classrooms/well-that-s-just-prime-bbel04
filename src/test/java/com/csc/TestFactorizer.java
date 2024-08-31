@@ -32,7 +32,7 @@ public class TestFactorizer {
   
   @Test
   public void testPrimeFactorsOfThree() {
-    String expected = "3 1";
+    String expected = "3";
     assertEquals(expected, factorizer.PrimeFactor(3));
   }
 
@@ -50,7 +50,7 @@ public class TestFactorizer {
 
   @Test
     public void testPrimeFactorsOfThriteen() {
-      String expected = "13 1";
+      String expected = "13";
       assertEquals(expected, factorizer.PrimeFactor(13));
     }
 
@@ -62,7 +62,7 @@ public class TestFactorizer {
 
   @Test
   public void testPrimeFactorsOfFourtyOne() {
-    String expected = "41 1";
+    String expected = "41";
     assertEquals(expected, factorizer.PrimeFactor(41));
   }
 

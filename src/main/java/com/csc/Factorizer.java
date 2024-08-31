@@ -23,7 +23,7 @@ public class Factorizer {
     }
 
     if (primeFactors.trim().equals(Integer.toString(originalNumber))) {  //if primeFactors is still equal to original number, it must be prime
-      return originalNumber + " 1";      //if yes, return the original number and 1 as factors
+      return originalNumber + "";      //if yes, return the original number
     }
     else {   
       return primeFactors.trim();  
