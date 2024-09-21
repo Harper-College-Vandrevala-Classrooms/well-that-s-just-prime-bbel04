@@ -65,4 +65,9 @@ public class TestFactorizer {
     String expected = "101";
     assertEquals(expected, factorizer.PrimeFactor(101));
   }
+ 
+  @Test
+  public void testIsItPrimeEleven() {
+    assertEquals(true, factorizer.isItPrime(11));
+  }
 }

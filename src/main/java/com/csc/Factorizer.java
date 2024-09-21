@@ -29,4 +29,19 @@ public class Factorizer {
       return primeFactors.trim();  
     }
   }
+  
+  public boolean isItPrime(int number) {
+    if (number == 1 || number == 0) {
+      return false;
+    }
+    if (number == 2) {
+      return true;
+    }
+    for (int i = 2; i <= Math.sqrt(number); i++) {   //iterate through the given number starting at two up until its square root
+      if (number % i == 0) {    //check if number is divisible by any factors
+        return false; 
+      } 
+    }
+    return true;
+  }
 }
